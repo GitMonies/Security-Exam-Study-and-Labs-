@@ -45,4 +45,17 @@ The attackers started by infecting a small number of POS terminals between Novem
 According to Seculert, the malware began to be exfiltrated on December 2nd, and over the next two weeks attackers collected 11 GB of stolen info. using a Russian-based server
 
 HVAC Company
-  - The attackers stole credentials from an HVAC company F
+  - The attackers stole credentials from an HVAC company Fazio Mechanical Services, this was accomplished through phishing emails sent to Fazio (infected with malware)
+
+Fazio likely had access to Target's Ariba external billing system
+
+{This report was published in 2014, at the time it was unknown but suspected how the attackers got to Target's POS terminals from the edge of the network}
+
+      - Likely due to poor isolation, not DMZ on Target's part
+      - Also they most likely used a default account name used by an IT management software product by BMC Software, and disguised their exfiltration malware as a legitimate product
+
+
+The Kill Chain
+(Recon, Weaponize, Deliver, Exploit, Install, Command & Control, Action)
+
+-Traditional Info_Sec relies on static defence
