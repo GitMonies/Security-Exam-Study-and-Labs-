@@ -1,1 +1,48 @@
+A “Kill Chain”
+Analysis of the 2013
+Target Data Breach 
 
+November - December 2013
+
+Up to 110 million Target customer's financial and personal info were leaked
+
+Key Points: 
+
+- Target gave network access to a third-party vendor.  This vendor had minimal cybersecurity practices, allowing the attackers access to the internal edge of Target's network
+
+- Target failed to respond to multiple automated warnings about attackers installing malware
+
+- Attacker with false credentials moved from less sensitive areas of the network to areas storing consumer data, a reflection of poor segmentation
+
+- Failed to respond to multiple warnings from the company's anti-intrusion software in regards to attacker's planned escape routes with sensitive data
+
+Approx. 40 million credit and debit card accounts were exposed.  
+(december 19th, 2013, public announcement from target)
+
+- In January of 2014, Target disclosed that non-financial personal information of up to 70 million customers was leaked
+
+
+The Stolen Data
+
+- Card information was listed for sale via black market forums, "card shops"
+      - they list card info: type, exp. date, track data, country, issuing bank, successful use rate for card batches
+- Buyers can create and use conterfeit cards with the track data and PIN numbers stolen from credit and debit card 
+
+
+The Attack
+
+"BlackPOS" malware installed on POS systems enabled the theft of the financial information
+  - Utlitizes RAM scraping, which allowed for the collection of unencrypted, plaintext data as it pased through the infeted POS machine's memory before transfer to the company's payment processing provider
+
+The attackers started by infecting a small number of POS terminals between November 15 and November 28, with the majority of POS terminals infected by November 30
+
+- A report (Dell SecureWorks) shows that the attackers also installed malwared designed to move stolen data throgh the network and past the Target firewall, on a Target Server
+  - Three varients of the malware were initially installed on November 30, and updated twice
+
+- According to a report (Bloomberg Businessweek), Target's fireEye malware intrusion detection system was not only ignored by the security team, but also prevented from automatically deleting the malware
+  - The Symantect antivirus software used by Target also detected malicious behavior around November 28
+
+According to Seculert, the malware began to be exfiltrated on December 2nd, and over the next two weeks attackers collected 11 GB of stolen info. using a Russian-based server
+
+HVAC Company
+  - The attackers stole credentials from an HVAC company F
