@@ -1,1 +1,27 @@
 
+
+<ps> displays info about running processes
+
+<ps aux> displays all processes running in the system
+
+<ps aux | grep apache2> Displays all services, and sends the output to grep, which will look through the output for the keyword "apache2"
+  - Then displays only relevant output
+
+
+
+
+
+
+
+
+
+find
+
+<find / -type f -name apache2>
+Find command, starting at the top of the directory, goes through every directory looking for "apache2" in the filename, and then lists everything found.
+
+< find /etc -type f -name apache2>
+
+  - Specify the directory with "/etc", searches only that directory and its subdirectories
+
+.\* will allow you to search without knowing the file extension name
